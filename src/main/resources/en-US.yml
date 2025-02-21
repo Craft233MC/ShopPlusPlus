@@ -1,0 +1,130 @@
+general:
+  none: "&cNone"
+  expired: "&cExpired"
+
+commands:
+  noSlotInInventory: "&cYou have no space in your inventory!"
+  noItemInHand: "&cYou have no items in hand."
+  noPriceProvided: "&cYou must provide the price of this item!"
+  limitReached: "&cYou cannot sell more items! Upgrade to a higher rank to unlock more features."
+  priceIsNotNumber: "&cThe price must be a valid number."
+  priceTooExpensive: "&cThe price is too expensive!"
+  itemListed: "&aSold item."
+  itemBuyerIsSeller: "&cYou cannot purchase your own items!"
+  notEnoughMoneyToPurchase: "&cYou do not have enough money to purchase that item!"
+  itemNotFound: "&cThe item was probably sold to another player or was removed by the seller."
+
+menu-titles:
+  main-menu: "Shop++"
+  player-listed-items: "Listed Items"
+  category-menu: "Category: {category}"
+  material-menu: "Material: {material}"
+  purchase-confirm: "Confirm Purchase"
+
+menu-items:
+  building-blocks:
+    displayname: "&2Building Blocks"
+    lore:
+      - "&7Left-click to open."
+    icon: GRASS_BLOCK
+  tools:
+    displayname: "&fTools"
+    lore:
+      - "&7Left-click to open."
+    icon: IRON_PICKAXE
+  food:
+    displayname: "&dFood"
+    lore:
+      - "&7Left-click to open."
+    icon: COOKED_BEEF
+  minerals:
+    displayname: "&bMinerals"
+    lore:
+      - "&7Left-click to open."
+    icon: DIAMOND
+  natural:
+    displayname: "&aNatural"
+    lore:
+      - "&7Left-click to open."
+    icon: OAK_SAPLING
+  redstone:
+    displayname: "&cRedstone"
+    lore:
+      - "&7Left-click to open."
+    icon: REDSTONE
+  miscellaneous:
+    displayname: "&6Miscellaneous"
+    lore:
+      - "&7Left-click to open."
+    icon: LAVA_BUCKET
+  player-info:
+    displayname: "&ePlayer: &6{player}"
+    lore:
+      - "&eRank: &6#{player-rank}"
+      - ""
+      - "&eBalance: &6{player-balance}"
+      - "&eTotal Earned: &6{player-totalearned}"
+    icon: PLAYERHEAD-c6e57726de60b1612857280116b2de609613ff342e93f10662391ea65bb3f939
+  cancel-purchase:
+    displayname: "&cCancel"
+    lore:
+      - "&7Left-click to cancel."
+    icon: PLAYERHEAD-ac14600ace50695c7c9bcf09e42afd9f53c9e20daa1524c95db4197dd3116412
+  confirm-purchase:
+    displayname: "&aConfirm"
+    lore:
+      - "&7Left-click to confirm."
+    icon: PLAYERHEAD-383a88b593dab7e6218b79f5d95c44bb7ea17427c8e6c8cf6bb51cd2ba6ece2a
+  
+menu-others:
+  category-item:
+    lore:
+      - ""
+      - "&eMaterial: &6{material}"
+      - "&eOnly &6{material-count} &eare listed."
+      - ""
+      - "&7Left-click to open."
+  material-item:
+    lore:
+      - ""
+      - "&eSeller: &6{item-seller}"
+      - "&ePrice: &6{item-price}"
+      - "&eExpires: &6{item-expires}"
+      - ""
+      - "&7Left-click to purchase."
+  material-item-specific-player:
+    lore:
+      - ""
+      - "&eSeller: &6{item-seller} &e(You)"
+      - "&ePrice: &6{item-price}"
+      - "&eExpires: &6{item-expires}"
+      - ""
+      - "&7Right-click to remove."
+  back-button:
+    displayname: "&cBack"
+    lore:
+      - "&7Return to the previous menu."
+    icon: RED_STAINED_GLASS_PANE
+  previous-page-button:
+    displayname: "&9Previous"
+    lore:
+      - "&7Go to the previous page."
+    icon: ARROW
+  next-page-button:
+    displayname: "&9Next"
+    lore:
+      - "&7Go to the next page."
+    icon: ARROW
+  filler-item:
+    displayname: " "
+    icon: GRAY_STAINED_GLASS_PANE
+
+identification:
+  categories:
+    1: "Building Blocks"
+    2: "Tools"
+    4: "Food"
+    8: "Minerals"
+    16: "Natural"
+    32: "Redstone"
+    64: "Miscellaneous"

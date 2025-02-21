@@ -1,0 +1,26 @@
+language: 'en-US'
+
+shop-config:
+  max-price: 1000000000
+
+  remove-items-after: 7
+
+economy-formatter:
+  format-balance: true
+
+  display-balance: "${value}"
+
+limits:
+  # Group: default
+  default:
+    max-items: 4
+  # Group: vip
+  vip:
+    max-items: 8
+  # Group: admin
+  admin:
+    max-items: 100
+
+formatters:
+  time-remaining: "{days} days, {hours} hours, {minutes} minutes, {seconds} seconds"
+  gui-pagination-title: "&r{title} &r| &3{current-page}&r/&c{total-pages}"

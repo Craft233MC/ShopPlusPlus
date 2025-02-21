@@ -1,0 +1,24 @@
+name: ShopPlusPlus
+main: shopplusplus.Plugin
+description: 'A simple Minecraft shop plugin!'
+author: TFAGaming
+version: 2.0.0
+api-version: 1.21
+softdepend:
+  - Vault
+commands:
+  shop:
+    description: 'Shop command; Open the main shop menu'
+    usage: '/<command>'
+    permission: shopplusplus.commands.shop
+    default: true
+  sell:
+    description: 'Sell command; Sell an item'
+    usage: '/<command>'
+    permission: shopplusplus.commands.sell
+    default: true
+  listed:
+    description: 'Listed command; View all listed items'
+    usage: '/<command>'
+    permission: shopplusplus.commands.listed
+    default: true
