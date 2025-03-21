@@ -1,0 +1,130 @@
+general:
+  none: "&c无"
+  expired: "&c已过期"
+
+commands:
+  noSlotInInventory: "&c你的背包已满!"
+  noItemInHand: "&c你手上没有任何物品."
+  noPriceProvided: "&c你必须指定该物品的价格!"
+  limitReached: "&c你已达到出售上限! 升级更高等级来解锁更多功能."
+  priceIsNotNumber: "&c价格必须是有效的数字."
+  priceTooExpensive: "&c价格过于昂贵!"
+  itemListed: "&a成功出售物品."
+  itemBuyerIsSeller: "&c不能购买自己的物品!"
+  notEnoughMoneyToPurchase: "&c你没有足够的金币购买该物品!"
+  itemNotFound: "&c该物品可能已被其他玩家购买或已被卖家下架."
+
+menu-titles:
+  main-menu: "Shop++"
+  player-listed-items: "列出的物品"
+  category-menu: "分类: {category}"
+  material-menu: "材料: {material}"
+  purchase-confirm: "确认购买"
+
+menu-items:
+  building-blocks:
+    displayname: "&2建筑方块"
+    lore:
+      - "&7左键打开."
+    icon: GRASS_BLOCK
+  tools:
+    displayname: "&f工具"
+    lore:
+      - "&7左键打开."
+    icon: IRON_PICKAXE
+  food:
+    displayname: "&d食物"
+    lore:
+      - "&7左键打开."
+    icon: COOKED_BEEF
+  minerals:
+    displayname: "&b矿物"
+    lore:
+      - "&7左键打开."
+    icon: DIAMOND
+  natural:
+    displayname: "&a自然"
+    lore:
+      - "&7左键打开."
+    icon: OAK_SAPLING
+  redstone:
+    displayname: "&c红石"
+    lore:
+      - "&7左键打开."
+    icon: REDSTONE
+  miscellaneous:
+    displayname: "&6杂项"
+    lore:
+      - "&7左键打开."
+    icon: LAVA_BUCKET
+  player-info:
+    displayname: "&e玩家: &6{player}"
+    lore:
+      - "&e等级: &6#{player-rank}"
+      - ""
+      - "&e余额: &6{player-balance}"
+      - "&e共计挣得: &6{player-totalearned}"
+    icon: PLAYERHEAD-c6e57726de60b1612857280116b2de609613ff342e93f10662391ea65bb3f939
+  cancel-purchase:
+    displayname: "&c取消"
+    lore:
+      - "&7左键取消."
+    icon: PLAYERHEAD-ac14600ace50695c7c9bcf09e42afd9f53c9e20daa1524c95db4197dd3116412
+  confirm-purchase:
+    displayname: "&a确认"
+    lore:
+      - "&7左键确认."
+    icon: PLAYERHEAD-383a88b593dab7e6218b79f5d95c44bb7ea17427c8e6c8cf6bb51cd2ba6ece2a
+
+menu-others:
+  category-item:
+    lore:
+      - ""
+      - "&e材料: &6{material}"
+      - "&eOnly &6{material-count} &eare listed."
+      - ""
+      - "&7左键打开."
+  material-item:
+    lore:
+      - ""
+      - "&e卖家: &6{item-seller}"
+      - "&e价格: &6{item-price}"
+      - "&e过期时间: &6{item-expires}"
+      - ""
+      - "&7左键购买."
+  material-item-specific-player:
+    lore:
+      - ""
+      - "&e卖家: &6{item-seller} &e(你)"
+      - "&e价格: &6{item-price}"
+      - "&e过期时间: &6{item-expires}"
+      - ""
+      - "&7右键删除."
+  back-button:
+    displayname: "&c返回"
+    lore:
+      - "&7返回上一个菜单."
+    icon: RED_STAINED_GLASS_PANE
+  previous-page-button:
+    displayname: "&9上一页"
+    lore:
+      - "&7返回上一页."
+    icon: ARROW
+  next-page-button:
+    displayname: "&9下一页"
+    lore:
+      - "&7前往下一页."
+    icon: ARROW
+  filler-item:
+    displayname: " "
+    icon: GRAY_STAINED_GLASS_PANE
+
+identification:
+  categories:
+    1: "建筑方块"
+    2: "工具"
+    4: "食物"
+    8: "矿物"
+    16: "自然"
+    32: "红石"
+    64: "杂项"
