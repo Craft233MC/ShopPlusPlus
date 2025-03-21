@@ -2,6 +2,7 @@ package shopplusplus;
 
 import java.io.File;
 
+import com.tcoded.folialib.FoliaLib;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,9 +22,11 @@ public class Plugin extends JavaPlugin {
 	public static LanguageLoader language;
 	public static YmlConfigValidator languageValidator;
 	public static Vault vault;
+	private static FoliaLib foliaLib;
 
 	public void onEnable() {
 		long startTime = System.currentTimeMillis();
+		foliaLib = new FoliaLib(this);
 
 		Console.pluginBanner();
 
@@ -146,5 +149,9 @@ public class Plugin extends JavaPlugin {
 	public boolean isVaultInstalled() {
 		return Bukkit.getServer().getPluginManager().getPlugin("Vault") != null
 				&& Bukkit.getServer().getPluginManager().getPlugin("Vault").isEnabled();
+	}
+
+	public static FoliaLib getFoliaLib() {
+		return foliaLib;
 	}
 }

@@ -9,7 +9,6 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import shopplusplus.Plugin;
 
@@ -95,12 +94,9 @@ public class Menu implements Listener {
             int slot = event.getRawSlot();
 
             if (callbacks.containsKey(slot)) {
-                new BukkitRunnable() {
-                    @Override
-                    public void run() {
-                        callbacks.get(slot).accept(player, event);
-                    }
-                }.runTask(plugin);
+                Plugin.getFoliaLib().getScheduler().runAtLocation(event.getWhoClicked().getLocation(),wrappedTask -> {
+                    callbacks.get(slot).accept(player, event);
+                });
             }
         }
     }

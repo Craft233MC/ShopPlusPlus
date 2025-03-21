@@ -9,7 +9,6 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import shopplusplus.Plugin;
 import shopplusplus.utils.formatters.Formatters;
@@ -217,14 +216,10 @@ public class MenuPagination implements Listener {
         }
 
         if (slot == size - 9) {
-            new BukkitRunnable() {
-                @Override
-                public void run() {
-                    goBackCallback.accept(player, event);
-
-                    destroy();
-                }
-            }.runTask(plugin);
+            Plugin.getFoliaLib().getScheduler().runAtLocation(event.getWhoClicked().getLocation() ,wrappedTask -> {
+                goBackCallback.accept(player, event);
+                destroy();
+            });
         }
 
         if (slot >= 9 && slot < size - 9) {

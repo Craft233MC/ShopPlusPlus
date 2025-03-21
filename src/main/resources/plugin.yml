@@ -4,6 +4,7 @@ description: 'A simple Minecraft shop plugin!'
 author: TFAGaming
 version: 2.0.0
 api-version: 1.21
+folia-supported: true
 softdepend:
   - Vault
 commands:
