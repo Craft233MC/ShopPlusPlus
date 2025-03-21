@@ -60,7 +60,7 @@ menu-items:
   player-info:
     displayname: "&e玩家: &6{player}"
     lore:
-      - "&e等级: &6#{player-rank}"
+      - "&e排名: &6#{player-rank}"
       - ""
       - "&e余额: &6{player-balance}"
       - "&e共计挣得: &6{player-totalearned}"
