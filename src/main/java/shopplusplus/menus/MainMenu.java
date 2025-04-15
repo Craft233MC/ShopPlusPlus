@@ -3,9 +3,11 @@ package shopplusplus.menus;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import org.bukkit.inventory.meta.SkullMeta;
 import shopplusplus.core.ShopManager;
 import shopplusplus.core.gui.Menu;
 import shopplusplus.core.structures.Category;
@@ -105,6 +107,9 @@ public class MainMenu {
         replacements.put("{player-rank}", String.valueOf(ShopManager.getPlayerRank(player)));
 
         ItemStack playerInfoButton = GUIUtils.getItem("player-info", replacements);
+        SkullMeta head = (SkullMeta) playerInfoButton.getItemMeta();
+        head.setOwnerProfile(player.getPlayerProfile());
+        playerInfoButton.setItemMeta(head);
 
         gui.addItem(26, playerInfoButton, (_player, event) -> {
             // open list items menu (/listed)
