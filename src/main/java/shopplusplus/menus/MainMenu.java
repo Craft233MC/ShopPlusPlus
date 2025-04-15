@@ -16,7 +16,7 @@ import shopplusplus.utils.players.PlayerUtils;
 
 public class MainMenu {
     public MainMenu(Player player) {
-        Menu gui = new Menu(GUIUtils.getTitle("main-menu"), 9 * 4);
+        Menu gui = new Menu(GUIUtils.getTitle("main-menu"), 9 * 3);
 
         ItemStack buildingBlocksButton = GUIUtils.getItem("building-blocks");
 
@@ -88,7 +88,7 @@ public class MainMenu {
             new SpecificCategoryMenu(player, Category.MISCELLANEOUS);
         });
 
-        gui.addItem(27, GUIUtils.getBackButton(), (_player, event) -> {
+        gui.addItem(18, GUIUtils.getBackButton(), (_player, event) -> {
             if (!event.isLeftClick()) {
                 return;
             }
@@ -106,7 +106,7 @@ public class MainMenu {
 
         ItemStack playerInfoButton = GUIUtils.getItem("player-info", replacements);
 
-        gui.addItem(35, playerInfoButton, (_player, event) -> {
+        gui.addItem(26, playerInfoButton, (_player, event) -> {
             // Do nothing
         });
 
