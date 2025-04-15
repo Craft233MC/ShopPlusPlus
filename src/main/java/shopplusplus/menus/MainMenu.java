@@ -107,7 +107,12 @@ public class MainMenu {
         ItemStack playerInfoButton = GUIUtils.getItem("player-info", replacements);
 
         gui.addItem(26, playerInfoButton, (_player, event) -> {
-            // Do nothing
+            // open list items menu (/listed)
+            if (!event.isLeftClick()) {
+                return;
+            }
+
+            new ListedItemsMenu(player);
         });
 
         gui.open(player, GUIUtils.getEmptySlot());
