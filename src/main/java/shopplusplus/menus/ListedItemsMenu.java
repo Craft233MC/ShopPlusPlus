@@ -41,7 +41,7 @@ public class ListedItemsMenu {
         MenuPagination gui = new MenuPagination(GUIUtils.getTitle("player-listed-items"), 9 * 6,
                 GUIUtils.getNextPageButton(),
                 GUIUtils.getPreviousPageButton(), items, (_player, event) -> {
-                    player.closeInventory();
+                    new MainMenu(_player); // command: /shop
                 }, (_player, context) -> {
                     if (!context.getEvent().isRightClick()) {
                         return;

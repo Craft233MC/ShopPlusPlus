@@ -93,7 +93,7 @@ public class MainMenu {
                 return;
             }
 
-            player.closeInventory();
+            player.performCommand("menu"); // back to last menu
         });
 
         PlayerData data = ShopManager.getPlayerDataByPlayer(player);
