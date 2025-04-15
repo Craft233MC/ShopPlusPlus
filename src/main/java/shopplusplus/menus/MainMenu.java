@@ -95,7 +95,7 @@ public class MainMenu {
                 return;
             }
 
-            player.performCommand("menu"); // back to last menu
+            player.performCommand("ultimateshop"); // back to last menu
         });
 
         PlayerData data = ShopManager.getPlayerDataByPlayer(player);
